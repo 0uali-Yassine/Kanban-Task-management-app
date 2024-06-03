@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+    .card:active{
+        cursor:grab;
+        border: 1px solid rgb(99,95,199);
+        opacity: .7;
+    }
+    .card:hover>h1{
+        color: rgb(99,95,199);
+    }
+    
+    .btn-hide:hover>p{
+        color: rgb(99,95,199);
+
+    }
+    .btn-hide:hover{
+        background-color: rgba(151, 148, 226, 0.164);
+    }
+
+    @media only screen and (100px<= width <= 890px){
+        .sidebar{
+            display: none;
+        }
+        .arrow{
+            display: block;
+        }
+
+    }
+    
+    @media only screen and (890px<= width <= 1200px){
+        .menu{
+            display: none;
+        }
+        
+    }
+    
+    @media only screen and (100px<= width <= 656px){
+        .showBoard{
+            display: none;
+        }
+        
+    }
+   
+}
